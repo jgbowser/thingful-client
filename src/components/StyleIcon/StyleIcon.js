@@ -7,9 +7,8 @@ const styleIconMap = {
   'News': <FontAwesomeIcon className='orange' icon='globe-americas' />,
   'Interview': <FontAwesomeIcon className='yellow' icon='pen-alt' />,
   'Story': <FontAwesomeIcon className='green' icon='book-open' />,
-  'default': null
 }
 
 export default function StyleIcon({ style='default' }) {
-  return styleIconMap[style]
+  return styleIconMap[style] || null
 }
